@@ -10,4 +10,6 @@ To get started:
 
 3) run npm start
 
-4) got to localhost:8080 and bathe in the glory of React-hot-dev-starter-kit
+4) go to localhost:8080 
+
+bathe in the glory of React-hot-dev-starter-kit
