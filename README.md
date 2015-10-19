@@ -1,8 +1,8 @@
-# React-Hot-Dev-Starter
-A skeleton project for starting with a hot-loading development react project server
+# React-Hot-Dev-Starter-Kit
+
 
 ##Introduction
-It's meant to be plain and simple boilerplate to get developing straight away... 
+A skeleton project for starting with a hot-loading development server to get going straight away... 
 
 Entry is in App.js which has some [react router 0.14](https://github.com/rackt/react-router) commented out code so that it can be easily included in the future.
 
