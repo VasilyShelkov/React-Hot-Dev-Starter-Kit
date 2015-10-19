@@ -22,14 +22,14 @@ The [React-Hot-Loader is going to be deprecated](https://github.com/gaearon/reac
 - A stripped Bootstrap V4 Alpha css file which has been mainly included for their [5 device grid system](http://v4-alpha.getbootstrap.com/layout/grid/) and also their [hidden/show utilities](http://v4-alpha.getbootstrap.com/layout/responsive-utilities/).
 
 
-##What You Waiting For, I know you Want it:
+##What You Waiting For, I Know You Want It:
 ```
-1. git clone
+1. git clone https://github.com/VasilyShelkov/React-Hot-Dev-Starter-Kit.git
 
 2. npm install
 
-3. run npm start
+3. npm start
 
-4. go to localhost:8080 
+4. go to localhost:8080 in the browser of your choice
 ```
 **bathe in the glory of my React-hot-dev-starter-kit and start developing your sexy ideas ASAP**
