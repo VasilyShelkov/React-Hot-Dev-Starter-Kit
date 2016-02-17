@@ -4,6 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'eval',
   entry: [
+    'eventsource-polyfill', //necessary evil for hot loading with IE
     'webpack-hot-middleware/client',
     './app/App.js'
   ],
