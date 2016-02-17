@@ -6,7 +6,7 @@ module.exports = {
   entry: [
     'eventsource-polyfill', //necessary evil for hot loading with IE
     'webpack-hot-middleware/client',
-    './app/App.js'
+    './src/index.js'
   ],
   output: {
     path: path.join(__dirname, 'public'),
