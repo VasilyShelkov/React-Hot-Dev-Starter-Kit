@@ -5,20 +5,22 @@
   "main": "index.html",
   "scripts": {
     "start": "node devServer.js",
-    "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register"
+    "test": "NODE_ENV=test mocha './src/**/*.spec.js' --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VasilyShelkov/React-Hot-Dev-Starter.git"
   },
   "keywords": [
-    "Node.js",
-    "ReactJs",
+    "node",
+    "react",
     "express",
     "hot-loading",
     "webpack-hot-middleware",
     "react-transform-hmr",
-    "react-transform-catch-errors"
+    "react-transform-catch-errors", 
+    "babel6",
+    "eslint"
   ],
   "author": "Vasily Shelkov",
   "license": "MIT",

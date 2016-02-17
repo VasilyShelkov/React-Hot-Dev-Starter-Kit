@@ -14,7 +14,7 @@ class App extends Component {
 	render() {
 		return(
 			<div>
-				Welcome to the React-Hot-Dev-Starter-Kit
+				Welcome to the React-Hot-Dev-Starter-Kit {this.props.text}
 			</div>
 		);
 	}
