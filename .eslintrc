@@ -7,7 +7,7 @@
         "mocha": true
     },
     "rules": {
-        "indent": [2,"tab"],
+        "indent": [2,"space"],
         "no-console": 0,
         "no-alert": 0
     },

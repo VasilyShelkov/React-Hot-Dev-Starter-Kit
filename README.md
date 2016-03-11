@@ -9,14 +9,12 @@ Entry is in App.js which has some [react router 2.0](https://github.com/rackt/re
 ##So Many Starter-Kits already available for React so why ?!
 Well, there's plenty of hot-loading starter kits already out there, to be honest, I'm only creating another one because I found the ones that are out there are either outdated, or bloated with a lot of stuff I don't want.
 
-The [React-Hot-Loader is going to be deprecated](https://github.com/gaearon/react-hot-loader) for the [transform family](https://github.com/gaearon/react-transform-boilerplate) which is totally logical since you get a lot more development goodies included :D 
+The [React-Transform-Plugin is going to be deprecated](https://medium.com/@dan_abramov/hot-reloading-in-react-1140438583bf#.rm0ygrt9u) for some other method to be seen... For now just using vanilla checking if hot loading in index.js 
 
 ##What It Includes:
 - Webpack config [transforming jsx babel es6](https://babeljs.io/) to javascript into bundle.js found in the public folder
 
-- Transform settings in `.babelrc` using [react-transform](https://github.com/gaearon/babel-plugin-react-transform) which includes:
-  1. [react-transform-hmr](https://github.com/gaearon/react-transform-hmr) - used for hot loading and is replacing the React-Hot-Loader
-  2. [react-transform-catch-errors](https://github.com/gaearon/react-transform-catch-errors) - catches errors inside components' render function, rendering the error instead of not showing anything. **No more having to keep the console open endlessly!**
+- Hot loading and error printing using react-redhat
 
 - Testing with Mocha, expect, expect-jsx, react-test-utils and deep-freeze (for those [redux](https://github.com/reactjs/redux) lovers out there) as a testing framework. To run tests ```npm test```
 
