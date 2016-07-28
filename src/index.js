@@ -10,7 +10,7 @@ let render = () => {
 	const App = require('./components/App').default;
 	ReactDOM.render(<App text="example" />, rootElement);
   //<Router history={browserHistory} routes={routes}/>, document.getElementById('app'));
-}
+};
 
 if (module.hot) {
   // Support hot reloading of components
@@ -36,6 +36,6 @@ if (module.hot) {
   module.hot.accept('./components/App', () => {
     setTimeout(render);
   });
-};
+}
 
 render();

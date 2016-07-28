@@ -1,19 +1,12 @@
-import chai, { expect } from 'chai';
-import jsxChai from 'jsx-chai'
-import TestUtils from 'react-addons-test-utils';
+import { expect } from 'chai';
+import { shallow } from 'enzyme';
 import React from 'react';
-import App from './App'
-
-chai.use(jsxChai);
+import App from './App';
 
 describe('#App', () => {
-	it('test-utils should render example prop', () => {
-		const renderer = TestUtils.createRenderer();
-		renderer.render(<App text='example' />);
+	it('enzyme should render example prop', () => {
+		const wrapper = shallow(<App text="example" />);
 
-		const actual = renderer.getRenderOutput();
-		const expected = <div>Welcome to the React-Hot-Dev-Starter-Kit example</div>;
-		
-		expect(actual).to.include(expected); //just making aware of the toEqualJSX for JSX shallow rendering testing
+		expect(wrapper.find('div').text()).to.equal("Welcome to the React-Hot-Dev-Starter-Kit example");
 	});
 });
