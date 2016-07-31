@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const extend = require('extend');
 const config = require('./webpack.config');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = extend(true, {}, config, {
   entry: [
@@ -18,5 +19,6 @@ module.exports = extend(true, {}, config, {
       },
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
+    new ExtractTextPlugin('app.css')
   ]
 });

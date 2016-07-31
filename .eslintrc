@@ -8,6 +8,7 @@
       "jquery": true
   },
   "rules": {
+      "indent": [2, 2],
       "no-console": 0,
       "no-alert": 0,
       "no-use-before-define": 0,

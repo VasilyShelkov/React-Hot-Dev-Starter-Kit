@@ -1,7 +1,7 @@
 import React from 'react';
 
 const App = ({ text }) => (
-	<div>
+	<div class="text--xlarge">
 		Welcome to the React-Hot-Dev-Starter-Kit {text}
 	</div>
 );
