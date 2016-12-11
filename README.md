@@ -4,28 +4,21 @@
 ##Introduction
 A skeleton project for starting with a hot-loading development server to get going straight away...
 
-Entry is in App.js which has some [react router 2.0](https://github.com/rackt/react-router) commented out code so that it can be easily included in the future by either adding a routes file and importing it or directly adding the routes to the Main.js file.
+Entry is index.js which uses [react router 4.0](https://github.com/ReactTraining/react-router/tree/v4) with a single fake route.
 
 ##So Many Starter-Kits already available for React so why ?!
 Well, there's plenty of hot-loading starter kits already out there, to be honest, I'm only creating another one because I found the ones that are out there are either outdated, or bloated with a lot of stuff I don't want.
 
-The [React-Transform-Plugin is going to be deprecated](https://medium.com/@dan_abramov/hot-reloading-in-react-1140438583bf#.rm0ygrt9u) for some other method to be seen... For now just using vanilla checking if hot loading in index.js
-
 ##What It Includes:
-- Webpack config [transforming jsx babel es6](https://babeljs.io/) to javascript into bundle.js found in the public folder
+- [Webpack 2.0](https://webpack.js.org/) dev and prod config in the webpack folder [transforming jsx babel es6](https://babeljs.io/) to javascript. In prod it the bundles can be found in the dist folder
 
-- Hot loading and error printing using react-redhat
+- [React-hot-loader 3](https://github.com/gaearon/react-hot-loader/tree/next) which uses the [webpack-dev-server](https://webpack.js.org/guides/development/#webpack-dev-server)
 
-- Testing with Mocha, expect, expect-jsx, react-test-utils. To run tests ```npm test```
+- Testing using [Jest](https://facebook.github.io/jest/). To run tests ```npm test```
 
-- airbnb [eslint](https://github.com/yannickcr/eslint-plugin-react) settings which I highly recommend using with yuour favourite text editor's eslint plugin ! (Tested with Atom and Sublime Text)
+- airbnb [eslint](https://www.npmjs.com/package/eslint-config-airbnb) settings which I highly recommend using with yuour favourite text editor's eslint plugin ! (tried and tested in Atom, Sublime and my preferred Vim :D)
 
-- An [express](http://expressjs.com/) dev server which uses [webpack's dev middleware](https://github.com/webpack/webpack-dev-middleware)
-
-- Allows you to serve static files from the public folder such as /images, /css or /js to add your own custom libraries
-
-- Bootstrap V4 Alpha which has been mainly included for their [5 device grid system](http://v4-alpha.getbootstrap.com/layout/grid/) and also their [hidden/show utilities](http://v4-alpha.getbootstrap.com/layout/responsive-utilities/).
-
+- An [express](http://expressjs.com/) server for production
 
 ##What You Waiting For, I Know You Want It:
 ```
@@ -35,6 +28,6 @@ The [React-Transform-Plugin is going to be deprecated](https://medium.com/@dan_a
 
 3. npm start or npm run dev
 
-4. go to localhost:3000 in the browser of your choice
+4. go to localhost:8080 for dev and localhost:3000 for prod in the browser of your choice
 ```
 **bathe in the glory of my React-hot-dev-starter-kit and start developing your sexy ideas ASAP**
