@@ -1,6 +1,7 @@
-onst { resolve } = require('path')
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { resolve } = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -9,11 +10,7 @@ module.exports = {
       'babel-polyfill',
       'react',
       'react-dom',
-      'react-redux',
       'react-router',
-      'redux',
-      'redux-thunk',
-      'styled-components',
     ],
   },
   output: {
@@ -25,6 +22,13 @@ module.exports = {
       test: /\.(js|jsx)$/,
       include: [resolve(__dirname, '../src')],
       use: 'babel-loader',
+    }, {
+      test: /\.(css|scss)$/,
+      include: [resolve(__dirname, '../src')],
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: 'css-loader?sourceMap!sass-loader?sourceMap'
+      })
     }],
   },
   plugins: [
@@ -41,5 +45,6 @@ module.exports = {
       filename: '../index.html',
       template: 'public/index.html',
     }),
+    new ExtractTextPlugin('dist/index.css')
   ],
-}
+};

@@ -1,6 +1,7 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -28,15 +29,12 @@ module.exports = {
       include: [resolve(__dirname, '../src'), resolve(__dirname)],
       use: 'babel-loader',
     }, {
-      test: /\.scss$/,
-      include: [resolve(__dirname, '../src'), resolve(__dirname)],
-      use: [{
-        loader: 'css-loader'
-      }, {
-        loader: 'postcss-loader'
-      }, {
-        loader: 'sass-loader'
-      }],
+      test: /\.(css|scss)$/,
+      include: [resolve(__dirname, '../src')],
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: 'style-loader',
+        loader: 'css-loader?sourceMap!sass-loader?sourceMap'
+      })
     }],
   },
   plugins: [
@@ -45,5 +43,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: '../public/index.html',
     }),
+    new ExtractTextPlugin('index.css')
   ],
 };

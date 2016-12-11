@@ -1,22 +1,20 @@
 const path = require('path');
 const express = require('express');
 
-module.exports = (app, port) => {
-  app.use('/public', express.static(path.join(__dirname, 'public')));
-  app.use('/bootstrap', express.static(
-    path.join(__dirname, 'node_modules', 'bootstrap', 'dist', 'css')
-  ));
+const app = express();
+const port = process.env.PORT || 3000;
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', 'index.html'));
-  });
+app.use('/', express.static(path.join(__dirname, 'dist')));
 
-  app.listen(port, (err) => {
-    if (err) {
-      console.log(err);
-      return;
-    }
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/dist', 'index.html'));
+});
 
-    console.log(`Server running at http://localhost: ${port}`);
-  });
-};
+app.listen(port, (err) => {
+  if (err) {
+    console.log(err);
+    return;
+  }
+
+  console.log(`Server running at http://localhost: ${port}`);
+});
