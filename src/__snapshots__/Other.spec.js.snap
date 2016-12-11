@@ -1,0 +1,21 @@
+exports[`src/Other.js renders the Other page 1`] = `
+<div>
+  <h1>
+    Router Some Other Page
+  </h1>
+  <ul>
+    <li>
+      <strong>
+        Pattern
+      </strong>
+      : 
+    </li>
+    <li>
+      <strong>
+        Pathname
+      </strong>
+      : 
+    </li>
+  </ul>
+</div>
+`;

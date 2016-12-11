@@ -1,0 +1,21 @@
+exports[`src/Home.js renders the Home page 1`] = `
+<div>
+  <h1>
+    Router Home
+  </h1>
+  <ul>
+    <li>
+      <strong>
+        Pattern
+      </strong>
+      : 
+    </li>
+    <li>
+      <strong>
+        Pathname
+      </strong>
+      : 
+    </li>
+  </ul>
+</div>
+`;
