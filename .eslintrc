@@ -22,6 +22,7 @@
   "globals": {
     "expect": true,
     "shallow": true,
-    "sinon": true
+    "sinon": true,
+    "renderer": true
   }
 }
