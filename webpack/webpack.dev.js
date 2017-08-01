@@ -1,10 +1,12 @@
 const { resolve } = require("path");
 const webpack = require("webpack");
+const Merge = require("merge");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const DashboardPlugin = require("webpack-dashboard/plugin");
 
-module.exports = {
+const CommonConfig = require("./webpack.common");
+
+module.exports = Merge(CommonConfig, {
   entry: [resolve(__dirname, "hotReload")],
   output: {
     filename: "bundle.js",
@@ -37,4 +39,4 @@ module.exports = {
     }),
     new DashboardPlugin()
   ]
-};
+});

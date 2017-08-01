@@ -2,7 +2,8 @@
   "parser": "babel-eslint",
   "extends": [
     "airbnb",
-    "prettier"
+    "prettier",
+    "prettier/react"
   ],
   "env": {
     "browser": true,
@@ -20,6 +21,7 @@
   },
   "globals": {
     "expect": true,
-    "shallow": true
+    "shallow": true,
+    "sinon": true
   }
 }
