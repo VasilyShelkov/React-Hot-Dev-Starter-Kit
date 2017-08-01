@@ -9,7 +9,7 @@
     "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js --progress --profile --colors",
     "dev": "webpack-dashboard -- webpack-dev-server --open --config webpack/webpack.config.dev.js --progress",
     "test": "jest --watch",
-    "precommit": "lint-staged"
+    "precommit": "jest && lint-staged"
   },
   "lint-staged": {
     "*.js": [
