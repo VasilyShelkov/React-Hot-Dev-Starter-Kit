@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`src/Home.js renders the Home page 1`] = `
 <div>
   <h1>
@@ -6,15 +8,10 @@ exports[`src/Home.js renders the Home page 1`] = `
   <ul>
     <li>
       <strong>
-        Pattern
-      </strong>
-      : 
-    </li>
-    <li>
-      <strong>
         Pathname
       </strong>
       : 
+      /home
     </li>
   </ul>
 </div>

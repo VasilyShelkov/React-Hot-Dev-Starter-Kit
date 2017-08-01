@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-export default ({ pattern, pathname }) => (
+export default ({ match }) =>
   <div>
     <h1>Router Some Other Page</h1>
     <ul>
-      <li><strong>Pattern</strong>: {pattern}</li>
-      <li><strong>Pathname</strong>: {pathname}</li>
+      <li>
+        <strong>Pathname</strong>: {match.path}
+      </li>
     </ul>
-  </div>
- );
+  </div>;
