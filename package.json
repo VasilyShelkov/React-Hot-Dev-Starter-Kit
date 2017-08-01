@@ -18,6 +18,7 @@
     ]
   },
   "jest": {
+    "verbose": true,
     "setupTestFrameworkScriptFile": "./testSetup.js"
   },
   "repository": {

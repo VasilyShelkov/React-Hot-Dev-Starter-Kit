@@ -10,6 +10,8 @@ Well, there's plenty of hot-loading starter kits already out there, to be honest
 ##What It Includes:
 - An [express](http://expressjs.com/) server for production
 
+- [styled-components](https://github.com/styled-components/styled-components) which in my opinion is more powerful than the likes of [sass](http://sass-lang.com/) and lives more naturally in React projects.
+
 - Testing using [Jest](https://facebook.github.io/jest/) for [snapshot testing](https://facebook.github.io/jest/docs/tutorial-react.html#snapshot-testing). To run tests ```npm test```
 
 - [prettier](https://github.com/prettier/eslint-config-prettier) and airbnb [eslint](https://www.npmjs.com/package/eslint-config-airbnb) settings which I highly recommend using with yuour favourite text editor's eslint plugin ! (tried and tested in Atom, Sublime and my preferred Vim :D)
