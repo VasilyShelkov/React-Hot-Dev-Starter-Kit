@@ -1,5 +1,4 @@
 import React from "react";
-import renderer from "react-test-renderer";
 import Other from "./Other";
 
 describe("src/Other.js", () => {
