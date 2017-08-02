@@ -1,6 +1,6 @@
 {
   "name": "React-Hot-Dev-Starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A skeleton project for starting with a hot-loading development react project server",
   "main": "index.html",
   "scripts": {
